@@ -3,7 +3,7 @@
 :root {
   --color-primary: #326c36;
   --color-secondary: #c14c38;
-  --color-extra: #5e3030;
+  --color-extra: #ca1f1f;
 }
 
 * {
@@ -77,7 +77,7 @@ section a {
 }
 
 .navbar a {
-  color: #000;
+  color: rgb(255, 0, 187);
   text-decoration: none;
 }
 
@@ -100,26 +100,78 @@ section a {
   margin: 0 5px;
 }
 
+
+/* BOX */
+.box {
+  margin-bottom: 30px;
+}
+
+.box-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.box-text{
+  max-width: 500px;
+  text-align: center;
+  justify-self: center;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.box-text . .btn{
+  margin-top: 20px;
+}
+
+.box-f .box-text{
+  max-width: 600px;
+}
+/* Grid Styles */
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.grid-reversed :first-child {
+  order:2;
+}
+  
+
+
 /* Buttons  */
 .btn {
   cursor: pointer;
   display: inline-block;
   background: none;
-  border: 1px rgb(0, 0, 0) solid;
+  border: 1px rgb(255, 255, 255) solid;
   border-radius: 50px;
-  padding: 10px 15px;
+  padding: 10px 16px;
   line-height: 1.2;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: rgba(10, 202, 255, 0.804);
+}
+
+.btn-special:hover {
+/* border: solid 2px pink; */
+  border: 2px solid white;
 }
 
 .btn-dark-outline {
-  border-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  border-color: rgb(94, 255, 118);
+  color: rgb(186, 0, 0);
 }
 
+.btn-dark-outline:hover
 .btn-light-outline:hover {
-  background-color: rgba(255, 255, 255, 0.06);
+  background-color: rgba(191, 15, 235, 0.06);
 }
 
 .btn-dark {
@@ -128,18 +180,21 @@ section a {
 }
 
 .btn-light-outline {
-  border-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  color: rgb(11, 23, 9);
 }
 
+.btn-dark-outline:hover {
+  background-color: rgb(38, 7, 214);
+}
 .btn-dark:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(236, 24, 239);
 }
 
 /* Backgrounds */
 .bg-primary {
   background-color: var(--color-primary);
-  color: rgb(255, 255, 255);
+  color: rgb(0, 191, 255);
 }
 .bg-secondary {
   background-color: var(--color-secondary);
@@ -147,15 +202,86 @@ section a {
 }
 .bg-extra {
   background-color: var(--color-extra);
-  color: rgb(0, 0, 0);
+  color: rgb(0, 21, 255);
 }
 .bg-dark {
   background-color: var(--color-dark);
-  color: rgb(0, 0, 0);
+  color: rgb(43, 255, 0);
+}
+/* text styling */
+
+/*    WHY ISNT THIS WORKING. HAD TO ADD text-align: center; " TO (xl and md).
+.text-center {
+  text-align: center;
+} */
+
+/* .text-center {
+  text-align: center;
+}  */
+
+.text-lg {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.text-md {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text-xl {
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 6px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text-sm {
+  font-size: 19px;
+  margin-bottom: 20px;
+} 
+
+/* Padding */
+
+.py-sm {
+  padding: 10px 0;
+}
+
+.py-md{
+  padding: 20px 0;
+}
+
+.py-lg {
+  padding: 40px 0;
+}
+
+/* THIS CHANGES THE SIZE OF TEXT DEPEND ON THE SCREEN SIZE */
+@media(max-width: 960px) {
+  .text-xl {
+    font-size: 30px;
+  }
+  .text-lg {
+    font-size: 25px;
+  }
+  .text-md {
+    font-size: 19px;
+  }
+}
+
+@media(min-width: 1440px) {
+  .box{
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
 }
 
 
-------------------------------------
 /* Footer & Social */
 /*
 .footer-container {
@@ -187,7 +313,7 @@ section a {
   background-color: #ccc;
   margin: 40px auto;
 }
------------------------------------
+
 /*  Change this section to 
 :root {
   --color-primary: #3ba515;
@@ -229,7 +355,7 @@ section a {
   color: #fff;
 }
 */
------------------------
+
 /* Navbar */ 
 
 
@@ -287,7 +413,7 @@ section a {
   margin: 0 5px;
 }
 */
-------------------------------------
+
 /* Footer & Social */
 /*
 .footer-container {
@@ -320,7 +446,7 @@ section a {
   margin: 40px auto;
 }
 */
-----------------------------------------
+
 /* Box */
 /*
 .box {
@@ -348,7 +474,8 @@ section a {
   max-width: 600px;
 }
 */
-------------------------------------------------
+
+
 /* Grid Styles */
 /*
 .grid-col-2 {
@@ -363,7 +490,8 @@ section a {
   order: 2;
 }
 */
-------------------------------------------
+
+
 /* Buttons */
 /*
 .btn {
@@ -402,7 +530,7 @@ section a {
   background-color: #333;
 }
 */
----------------------------------------
+
 /* Backgrounds */
 /*
 .bg-primary {
@@ -422,7 +550,7 @@ section a {
   color: #000;
 }
 */
------------------------------------------------
+
 /* Text Styling */
 /*
 .text-center {
@@ -453,7 +581,8 @@ section a {
   margin-bottom: 20px;
 }
 */
------------------------------------------------
+
+
 /* Padding */
 /*
 .py-sm {
@@ -466,7 +595,8 @@ section a {
   padding: 40px 0;
 }
 */
------------------------------------------------
+
+
 /* Hamburger Menu Icon */
 /*
 .hamburger {
@@ -514,7 +644,7 @@ section a {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
 */
------------------------------------------------
+
 
 /* Mobile Menu */
 /*
@@ -626,4 +756,3 @@ section a {
   }
 }
 */
------------------------------------------------
