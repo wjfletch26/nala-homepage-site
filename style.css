@@ -417,6 +417,11 @@ img.image-f {
   }
 }
 
+@media (max-width:768px) {
+  .grid-col-2 { grid-template-columns: 1fr;}
+  .grid-reversed :first-child {order: 0;}
+}
+
 @media(min-width: 1440px) {
   .box{
     max-width: 1440px;
