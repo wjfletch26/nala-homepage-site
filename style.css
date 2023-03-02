@@ -2,7 +2,7 @@
 
 :root {
   --color-primary: hsl(218, 24%, 76%);
-  --color-secondary: #50541c;
+  --color-secondary: #b8bc81;
   --color-extra: #50541c;
   --color-dark: #3a4034;
 }
@@ -62,7 +62,7 @@ section a {
 .navbar {
   width: 100%;
   height: auto;
-  background-color: var(--color-dark);
+  background-color: #73c2be;
   padding: 20px;
   box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
     0 0 2px rgb(0 0 0 / 7%);
@@ -71,9 +71,10 @@ section a {
 .navbar-container {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   align-items: center;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 30px;
 }
 .navbar ul {
   display: flex;
@@ -124,12 +125,65 @@ section a {
   margin: 0 5px;
 }
 
+.main-title {
+  font-family: "Mynerve", cursive;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .mobile-row-adjustment {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/* carousel */
+
+.carousel {
+  /* background-color: var(--color-dark); */
+  /* height: 400px; */
+  display: flex;
+  align-items: center;
+  /* display: flex;
+  flex-shrink: 0; */
+  width: 100%;
+  /* max-height: 300px; */
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+}
+
+/* @media all and (max-width: 480px) {
+  img {
+    width: 100%;
+  } */
+
+.carousel-item1 {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+/* .fix-pic {
+  display: flex;
+  display: inline-block;
+  flex-shrink: 0;
+  width: 100%;
+  max-height: 300px;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+} */
+
 /* Footer& Social */
 .footer-container {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   padding: 10px 30px;
+  background-color: #9d9e947d;
+  padding-top: 2em;
+  border-radius: 80% 20%;
 }
 
 .social {
@@ -288,24 +342,35 @@ img.image-f {
   font-size: 24px;
   margin-bottom: 20px;
   text-align: center;
+  font-size: small;
 }
 
 .text-xl {
+  font-family: "Mukta", sans-serif;
   font-size: 50px;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
   font-weight: 600;
   margin-bottom: 20px;
+  background-color: #cccccc78;
+  border-radius: 30% 60%;
 }
 
 .black-text {
   color: black;
+  background-color: #9a9e9b;
+  border-radius: 20%;
+  padding: 8px;
+  font-size: 50px;
 }
 
 .text-sm {
   font-size: 19px;
   margin-bottom: 20px;
+  background-color: rgba(111, 183, 166, 0.444);
+  border-radius: 10px;
+  padding: 15px;
 }
 
 /* Padding */
@@ -454,4 +519,7 @@ img.image-f {
 
 .title-header {
   padding: 2rem;
+  margin-bottom: 20px;
+  background-color: #cccccc78;
+  border-radius: 0% 30%;
 }
