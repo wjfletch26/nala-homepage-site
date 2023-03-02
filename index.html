@@ -1,56 +1,39 @@
-
-  <!DOCTYPE html>
-  <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="style.css" /> 
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta&family=Mynerve&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
     <title>Nala - The Best Dog In Ze World</title>
   </head>
   <body>
-      <nav class="navbar">
-        <div class="navbar-container">
-          <div class="navbar-brand">
-              <a href="index.html">
-                <img src="img/logo.svg" alt="Starbucks">
-              </a>
-          </div>
-
-          <ul class="navbar-nav-left">
-            <li>
-              <a href="#">Menu</a>
-            </li>
-            <li>
-              <a href="#">Rewards</a>
-            </li>
-            <li>
-              <a href="#">Gift Cards</a>
-            </li>
-          </ul> 
-          <ul class="navbar-nav-right">
-            <li>
-              <a href="#">
-                <img src="img/marker.svg" alt="">
-                <span>Find a store</span>
-              </a>
-            </li>
-            <li><button class="btn btn-dark-outline">Sign in</button> </li>
-            <li><button class="btn btn-dark">Join now</button> 
-            </li>
-          </ul>
-          
-          <!-- hamburger menu -->
-          <button type="button" class="hamburger" id="menu-btn">
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-          </button>
+    <nav class="navbar navbar-expand-lg">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="img/pitty_icon-removebg-preview.png" alt="Starbucks" />
+          </a>
         </div>
-      </nav>
-      <!-- moble menu -->
-      <div class="mobile-menu hidden" id="menu">
-        <ul>
+
+        <ul class="navbar-nav-left">
           <li>
             <a href="#">Menu</a>
           </li>
@@ -61,114 +44,244 @@
             <a href="#">Gift Cards</a>
           </li>
         </ul>
-
-        <div class="mobile-menu-bottom">
-          <button class="btn btn-dark-outline">sign in</button>
-          <button class="btn btn-dark">Join now</button>
-          <div>
+        <ul class="navbar-nav-right">
+          <li>
             <a href="#">
-              <img src="img/marker.svg" alt="">
+              <img src="img/marker.svg" alt="" />
               <span>Find a store</span>
             </a>
-          </div>
+          </li>
+          <li><button class="btn btn-dark-outline">Sign in</button></li>
+          <li><button class="btn btn-dark">Join now</button></li>
+        </ul>
 
-          </div>
+        <!-- hamburger menu -->
+        <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- moble menu -->
+    <div class="mobile-menu hidden" id="menu">
+      <ul>
+        <li>
+          <a href="#">Menu</a>
+        </li>
+        <li>
+          <a href="#">Rewards</a>
+        </li>
+        <li>
+          <a href="#">Gift Cards</a>
+        </li>
+      </ul>
 
+      <div class="mobile-menu-bottom">
+        <button class="btn btn-dark-outline">sign in</button>
+        <button class="btn btn-dark">Join now</button>
+        <div>
+          <a href="#">
+            <img src="img/marker.svg" alt="" />
+            <span>Find a store</span>
+          </a>
         </div>
       </div>
-      <!-- Box A-->
-      <section class="box box-a bg-primary text-center py-md">
+    </div>
+
+    <!-- Main Container-->
+
+    <div class="container py-4 d-grid gap-3">
+      <!-- Row 1------------>
+
+      <div class="row text-center">
         <div class="box-inner">
-          <h2 class="text-xl black-text "> 👋 My name is nala <br> Im just trying to make it <br>in a humans world <br>🌎 </h2>
-          <p class="text-md">  I'm an American Staferdshire Terrier
-          <a href="#">Learn more</a>
-          </p>
-<!-- <section class="img money-shot"></section> -->
-        </div>
-      </section>
-
-    <!-- YouTube time stamp 35min "Other Boxes and Grids" -->
-      <!-- Box B------------>
-      <section class="box box-b bg-secondary grid-col-2">
-        <img src="img/nalz.jpg" alt="">
-        <div class="box-text">
-          <h2 class="text-xl">Family Photos</h2>
-           <p class="text-sm">I love my family and all their friends! ❤️ </p>
-          <a href="#" class="btn btn-light-outline">Order Now</a>
-        </div>
-      </section>
-
-      <!-- Box C------------>
-      <section class="box box-c bg-secondary grid-col-2 grid-reversed">
-        <img src="img/Nala-green-scarf.JPG " alt="">
-        <div class="box-text">
-          <h2 class="text-xl">Pretty Pitty </h2>
-           <p class="text-sm">
-                Makes me sad people dont like me based on my looks. 
-                I hope people can see I'm as fun and loving as not any dog, but the best dogs youve ever seen. 😉
-              </p>
+          <h1 class="black-text main-title placeholder-wave">
+            👋 My name is Nala <br />
+            I'm just trying to make it <br />in a humans world 🌎<br />
+          </h1>
           <p class="text-md">
-            <a href="#" class="btn btn-light-outline">Order Now</a>      
+            I'm an American Staferdshire Terrier
+            <a href="#">Learn more</a>
           </p>
         </div>
-      </section>
+      </div>
 
-      <!-- Box d------------>
-      <section class="box box-d bg-primary grid-col-2">
-        <img src="img/nala-blankets-neenies-patio.jpeg" alt="">
-        <div class="box-text">
-          <h2 class="text-xl black-text ">Getting Some <br> R & R</h2>
-          <p class="text-md black-text "> After a good going out with my dad I like to get some rest and recuperation. 
-                              Something humans call R & R. I like to sleep in awkward positions, humans think its cute, I'm just trying to make sure they can smell me in their dreams.</p>
-            <a href="#" class="btn btn-light-outline">Order Now</a>
-          </p>
+      <!-- Row 2------------>
+
+      <div class="row align-items-center">
+        <div class="col-md-6 col-sm-12">
+          <img src="img/nala-girls-passed-out.jpg" alt="" />
         </div>
-      </section>
 
-            <!-- Box e------------>
-      <section class="box box-e bg-secondary grid-col-2 grid-reversed">
-        <img src="img/nala-girls-passed-out.jpg" alt="">
-        <div class="box-text">
-          <h2 class="text-md">Nature is my true home</h2>
-          <p class="text-sm"> If your lucky you might catch me around town on your favorite trails, sometime chasing my owner on a mountain bike.</p>
-          <p class="text-md">
-            <a href="#" class="btn btn-light-outline">Order Now</a>
-          </p>        
+        <div class="col-md-6 col-sm-12">
+          <div class="box-text">
+            <h2 class="text-xl">Family Photos</h2>
+            <p class="text-sm">I love my family and all their friends! ❤️</p>
+            <!-- <a href="#" class="btn btn-light-outline">Order Now</a> -->
+          </div>
         </div>
-      </section>
+      </div>
 
-      <!-- box F -->
-      <section class="box box-f grid-col-2">
-        <div>
-          <img class="image-f" src="img/PXL_20221224_063106293.jpg" alt="">
-          <div class="bg-extra py-lg">
-            <div class="box-text">
-              <h2 class="text-md">Check out my favorite toys</h2>
-              <p class="text-sm">
-                Feel free to buy some yourself.
-              </p>
-              <p class="text-md">
-                <a href="#" class="btn btn-dark-outline">Order Now</a>
-              </p>        
+      <!-- Row 3------------>
+      <div class="row mobile-row-adjustment align-items-center">
+        <!-- Column 1------------>
+        <div class="col-md-6 col-sm-12">
+          <div class="box-text">
+            <h2 class="text-xl">Pretty Pitty</h2>
+            <p class="text-sm">
+              Makes me sad people dont like me based on my looks. I hope people
+              can see I'm as fun and loving as not any dog, but the best dogs
+              youve ever seen. 😉
+            </p>
+            <p class="text-md">
+              <!-- <a href="#" class="btn btn-light-outline">Order Now</a> -->
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <img src="img/Nala-green-scarf.JPG " alt="" />
+        </div>
+      </div>
+
+      <!-- Row 4------------>
+      <div class="row align-items-center">
+        <!-- Column 1------------>
+        <div class="col-md-6 d-flex align-items-center">
+          <img src="img/nals_and_gurls.jpg" alt="" />
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <div class="box-text">
+            <h2 class="text-xl">
+              Getting Some <br />
+              R & R
+            </h2>
+            <p class="text-sm">
+              After a good going out with my dad I like to get some rest and
+              recuperation. Something humans call R & R. I like to sleep in
+              awkward positions, humans think its cute, I'm just trying to make
+              sure they can smell me in their dreams.
+            </p>
+            <!-- <a href="#" class="btn btn-light-outline">Order Now</a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 4------------>
+
+      <div class="row mobile-row-adjustment align-items-center">
+        <div class="col-md-6 col-sm-12">
+          <div class="box-text">
+            <h2 class="text-xl">Nature is my true home</h2>
+            <p class="text-sm">
+              If your lucky you might catch me around town on your favorite
+              trails, sometime chasing my owner on a mountain bike.
+            </p>
+            <!-- <a href="#" class="btn btn-light-outline">Order Now</a> -->
+          </div>
+        </div>
+
+        <div class="col-md-6 d-flex align-items-center">
+          <img src="img/nala-lake-shore.jpg" alt="" />
+        </div>
+      </div>
+
+      <!-- My Adventures Section -->
+      <!-- <div class="row  align-items-center">
+        <div class="title-header">
+          <h1>Check Out Some of My Adventures</h1>
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <img class="image-f" src="img/Nala-green-scarf.JPG" alt="" />
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <img src="img/nala-sun-n-eyes-neenie-patio.jpeg" alt="" />
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <img
+            src="img/nala-blankets-neenies-patio.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div> -->
+
+      <div class="">
+        <div class="title-header text-center">
+          <h1>Check Out Some of My Adventures!</h1>
+        </div>
+        <div class="row mx-auto my-auto justify-content-center">
+          <div id="carouselExample" class="carousel slide carousel">
+            <!-- <div class="carousel-inner">
+            <div class="carousel-item active carousel-item1">
+              <img src="img/nals-fin-blanket.jpg" alt="..." />
+            </div>
+            <div class="carousel-item carousel-item1">
+              <img src="img/nals-kiss-fin.jpg" alt="..." />
+            </div>
+            <div class="carousel-item activecarousel-item1">
+              <img src="img/nals-pose-gu-bkyrd.jpg" alt="..." />
+            </div>
+            <div class="carousel-item carousel-item1">
+              <img src="img/nala-sun-n-eyes-neenie-patio.jpeg" alt="..." />
+            </div>
+            <div class="carousel-item carousel-item1">
+              <img src="img/nals-stairNdistance.jpg" alt="..." />
+            </div>
+          </div> -->
+            <div id="carouselExample" class="carousel slide carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active carousel-item1">
+                  <img src="img/nals-hillside-overlook.jpg" alt="..." />
+                </div>
+                <div class="carousel-item carousel-item1">
+                  <img src="img/nala-sun-n-eyes-neenie-patio.jpeg" alt="..." />
+                </div>
+                <div class="carousel-item activecarousel-item1">
+                  <img src="img/Nalz-rustic-doorway.jpg" alt="..." />
+                </div>
+                <div class="carousel-item carousel-item1">
+                  <img src="img/nalz.jpg" alt="..." />
+                </div>
+                <div class="carousel-item carousel-item1">
+                  <img src="img/nals-sunset.jpg" alt="..." />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </div>
-        <div>
-          <img src="img/nala-sun-n-eyes-neenie-patio.jpeg" alt="">
-          <div class="bg-primary py-lg">
-            <div class="box-text">
-              <h2 class="text-md black-text ">Netflix and chilling?
-             </h2>
-              <p class="text-sm black-text "> Products I like to relax and chill on when my Dad gets lazy. </p>
-              <p class="text-md">
-                <a href="#" class="btn btn-light-outline">Order Now</a>
-              </p>        
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="divider"></div>
-      <footer>
+      </div>
+    </div>
+
+    <footer>
       <div class="footer footer-container">
         <!-- <div class="divider footer-container"></div> -->
         <div class="social">
@@ -190,14 +303,11 @@
           <a href="https://twitter.com">
             <img src="./img/social-twitter.svg" alt="" />
           </a>
-        </div>         
-        <p>© 2021 Starbucks Coffee Company. All rights reserved.
-        </p>
+        </div>
+        <p>webpage design by Josh Fletcer</p>
       </div>
     </footer>
-        </div>
-      </div>
 
-      <script src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
